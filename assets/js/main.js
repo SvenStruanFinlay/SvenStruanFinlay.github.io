@@ -55,11 +55,11 @@ jQuery(document).ready(function($) {
     );
 
     /* Github Calendar - https://github.com/SvenStruanFinlay/github-calendar */
-    GitHubCalendar("#github-graph", "IonicaBizau");
+    GitHubCalendar("#github-graph", "SvenStruanFinlay");
 
 
     /* Github Activity Feed - https://github.com/SvenStruanFinlay/github-activity */
-    GitHubActivity.feed({ username: "caseyscarborough", selector: "#ghfeed" });
+    GitHubActivity.feed({ username: "SvenStruanFinlay", selector: "#ghfeed" });
 
 
 });
