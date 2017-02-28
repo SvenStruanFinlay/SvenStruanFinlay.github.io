@@ -10,7 +10,7 @@
 body {
   font-family: 'Lato', arial, sans-serif;
   color:  #000080;
-  background-image: "background2.jpg";
+  background-image: url("http://www.svensfinlay.tech/assets/images/background2.jpg");
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
