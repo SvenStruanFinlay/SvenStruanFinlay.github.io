@@ -9,7 +9,7 @@
 /* ======= Base ======= */
 body {
   font-family: 'Lato', arial, sans-serif;
-  color: #9999ff;
+  color: #000033;
   background: #ffd1b3;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -23,10 +23,10 @@ h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: #778492;
+  color: #000033;
 }
 a {
-  color: #3AAA64;
+  color: #600080;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -117,7 +117,7 @@ iframe {
 /* ======= Header ======= */
 .header {
   padding: 30px 0;
-  background: #f5f5f5;
+  background: #e6e6ff;
   border-top: 10px solid #778492;
 }
 .header .btn {
