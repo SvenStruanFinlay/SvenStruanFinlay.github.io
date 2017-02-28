@@ -10,7 +10,7 @@
 body {
   font-family: 'Lato', arial, sans-serif;
   color:  #000080;
-  background: #99ff99;
+  background-image: url("background2.jpg");
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -164,6 +164,7 @@ iframe {
   font-size: 20px;
   padding-top: 8px;
 }
+
 /* ======= Sections======= */
 .sections-wrapper {
   padding-top: 60px;
