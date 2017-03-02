@@ -73,42 +73,9 @@
                             <p>I am also a musician on the side and play piano, baritone saxophone and double bass. I am the Musical Director of The Vocal Bandits a Capella and a member of the university big band
                             </p>
 
-                            <div id="container">
-                                <ul>
-                                    <li><img src="picture1.jpg" width="604" height="453" /></li>
-                                    <li><img src="picture2.jpg" width="604" height="453" /></li>
-                                    <li><img src="picture3.jpg" width="604" height="453" /></li>
-                                </ul>
-                                <span class="button prevButton"></span>
-                                <span class="button nextButton"></span>
-                            </div>
-                            <script>
-                                $(window).load(function() {
-                                    var pages = $('#container li'),
-                                        current = 0;
-                                    var currentPage, nextPage;
-
-                                    $('#container .button').click(function() {
-                                        currentPage = pages.eq(current);
-                                        if ($(this).hasClass('prevButton')) {
-
-                                            if (current <= 0)
-                                                current = pages.length - 1;
-                                            else
-                                                current = current - 1;
-                                        } else {
-                                            if (current >= pages.length - 1)
-                                                current = 0;
-                                            else
-                                                current = current + 1;
-                                        }
-                                        nextPage = pages.eq(current);
-                                        currentPage.hide();
-                                        nextPage.show();
-                                    });
-                                });
-                            </script>
-
+                            <img src="assets/images/hashcode.jpg" alt="HashCode" class="img img-responsive">
+                            <img src="assets/images/hashcode.jpg" alt="HashCode" class="img img-responsive">
+                            <img src="assets/images/hashcode.jpg" alt="HashCode" class="img img-responsive">
                         </div>
                         <!--//content-->
                     </div>
