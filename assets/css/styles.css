@@ -125,7 +125,8 @@ iframe {
 
 .header .profile-image {
   margin-right: 30px;
-  border-radius: 50%;
+  border-radius: 50px;
+  width: 250px;
 }
 
 .header .profile-content .name {
