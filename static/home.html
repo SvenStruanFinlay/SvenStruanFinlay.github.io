@@ -6,70 +6,84 @@
     <title>Sven Struan Finlay</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/component1.css" />
+    <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="js/particles.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/typed.js"></script>
 
 
+
 </head>
 
 <body>
+    <div class="navblock">
 
+        <nav class="navbar navbar-light bg-light ">
+
+        </nav>
+    </div>
+
+    <div id="particles-js"> </div>
 
 
     <div class="navblock ">
-        <nav class="navbar fixed-top  navbar-expand-lg ">
+        <nav class="navbar fixed-top navbar-expand-lg ">
 
 
 
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="container">
-                    <ul class="navbar-nav nav-fill w-100">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./home.html">Home <span class="sr-only"></span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Not About Me</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Projects
-        </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">St Andrews</a>
-                                <a class="dropdown-item" href="#">Hackathons</a>
-                                <a class="dropdown-item" href="#">Other</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
+                    <span class="navbar-brand mb-0 h1"></span>
 
-                        </li>
-                    </ul>
+
                 </div>
             </div>
         </nav>
 
-    </div>
-
-    <section class="btext panel1">
-        <div class="block">
-            <div class="container Title Comtainer">
-
-                <h1 class="Heading">Sven Struan Finlay</h1>
-                <span id="typed"></span>
-                <!-- <p class="lead">I am a student in the UK currently studing Computer Science at the university of St Andrews.</p> -->
+        <nav class="navbar fixed-top navbar-expand-lg ">
+            <a class="navbar-brand" href="#"><h1 class="Heading">Sven Struan Finlay</h1>    </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarText">
 
             </div>
+            <span id="typed"></span>
+        </nav>
+    </div>
+
+    <section class="panel1">
+
+        <!-- Start Nav Structure -->
+        <button class="cn-button" id="cn-button">+</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+            <ul>
+                <li><a href="#"><span class="icon-picture"></span></a></li>
+                <li><a href="#"><span class="icon-headphones"></span></a></li>
+                <li><a href="#"><span class="icon-home"></span></a></li>
+                <li><a href="#"><span class="icon-facetime-video"></span></a></li>
+                <li><a href="#"><span class="icon-envelope-alt"></span></a></li>
+            </ul>
         </div>
+        <div id="cn-overlay" class="cn-overlay"></div>
+        <!-- End Nav Structure -->
 
     </section>
-    <div id="particles-js"> </div>
+
+    <div class="block">
+
+    </div>
+
+
+
+
+
 
     <style media="screen">
         #typed {
@@ -79,12 +93,15 @@
     <script>
         var typed = new Typed('#typed', {
             strings: ['I am a university student.', 'I am a computer scientist. ', 'I am a coffee drinker. ', 'I am a musician. ', 'I am a foodie. ', ],
-            typeSpeed: 30,
-            backSpeed: 50,
+            typeSpeed: 20,
+            backSpeed: 30,
             smartBackspace: true, // this is a default
             loop: true
         });
     </script>
+    <script src="js/demo1.js"></script>
+    <script src="js/polyfills.js"></script>
+
     <script src="js/js.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
