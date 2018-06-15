@@ -35,7 +35,7 @@ html, body {
 
 .btext {
     color: #f9f3f4;
-    position: absolute;
+    position: fixed;
     text-align: center;
     top: 25%;
     width: 100%;
