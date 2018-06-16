@@ -19,7 +19,7 @@ html, body {
 }
 
 .block {
-    opacity: 0.5;
+    opacity: 0.9;
     background-color: #25274D;
     text-align: center;
     padding-top: 10%;
@@ -40,6 +40,34 @@ html, body {
     top: 25%;
     width: 100%;
     line-height: 1em;
+}
+
+.btextblock {
+    font-family: 'Teko', sans-serif;
+    height: 500px;
+    color: #f9f3f4;
+    opacity: 0.9;
+    background-color: #25274D;
+    position: fixed;
+    /* text-align: center; */
+    top: 25%;
+    width: 110%;
+    line-height: 1em;
+}
+
+.btextblock h1 {
+    font-size: 70px;
+}
+
+.btextblock .titleText {
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Teko', cursive;
+    font-size: 40px;
+    /* margin: 10px 50px; */
+    margin-top: 7%;
+    letter-spacing: 6px;
+    font-weight: bold;
 }
 
 .jumbotron {
@@ -77,4 +105,12 @@ canvas {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+}
+
+.me {
+    position: static;
+    opacity: none;
+    width: auto%;
+    height: 100%;
+    opacity: 0.9;
 }
