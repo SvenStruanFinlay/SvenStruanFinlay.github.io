@@ -55,6 +55,19 @@ html, body {
     line-height: 1em;
 }
 
+.btextblock2 {
+    font-family: 'Teko', sans-serif;
+    margin: 20px 0;
+    height: 500px;
+    color: #f9f3f4;
+    opacity: 0.95;
+    position: relative;
+    background-color: #25274D;
+    text-align: center;
+    width: 100%;
+    /* line-height: 1em; */
+}
+
 .btextblock h1 {
     font-size: 70px;
 }
