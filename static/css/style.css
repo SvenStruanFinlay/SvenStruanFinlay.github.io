@@ -110,3 +110,38 @@ canvas {
 .me {
     top: -150px;
 }
+
+.fab {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #25274D;
+    color: white;
+}
+
+.fa-google {
+    background: #25274D;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #25274D;
+    color: white;
+}
+
+.fa-instagram {
+    background: #25274D;
+    color: white;
+}
