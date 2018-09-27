@@ -8,6 +8,11 @@
 
 /* Titles: #29648A */
 
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
 body {
     background-color: #AAABB8;
     color: white;
@@ -61,7 +66,7 @@ html, body {
     height: 500px;
     color: #f9f3f4;
     opacity: 0.95;
-    position: relative;
+    /* position: absolute; */
     background-color: #25274D;
     text-align: center;
     width: 100%;
@@ -157,4 +162,11 @@ canvas {
 .fa-instagram {
     background: #25274D;
     color: white;
+}
+
+@media screen and (max-width:450px) {
+    /* CSS for screens that are 320 pixels or less will be put in this section */
+    h1 {
+        font-size: 20px;
+    }
 }

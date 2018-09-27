@@ -34,3 +34,7 @@ function typewriter() {
 
 
 typewriter();
+
+$('.carousel').carousel({
+    interval: 2000
+})
