@@ -1,0 +1,26 @@
+.contactCard {
+	background-color: #464866;
+	margin: 12% auto;
+	width: 75%;
+	height: 50%;
+}
+
+.contactlist {
+	font-size: 18px;
+	height: inherit;
+	color: #FFFFFF;
+	list-style-type: circle;
+}
+
+.contactlist a {
+	color: inherit;
+}
+
+.row {
+	margin: 10px auto;
+}
+
+li {
+	display: list-item;
+	list-style-position: inside;
+}
