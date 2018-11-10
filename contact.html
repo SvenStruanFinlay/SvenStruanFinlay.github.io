@@ -1,103 +1,102 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<php $errors='' ; $myemail='yourname@website.com' ;// <-----Put Your email address here. if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])) { $errors .="\n Error: all fields are required" ; } $name=$_POST['name'];
-    $email_address=$_POST['email']; $message=$_POST['message']; if (!preg_match( "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i" , $email_address)) { $errors .="\n Error: Invalid email address" ; } if( empty($errors)) {
-    $to=$myemail; $email_subject="Contact form submission: $name" ; $email_body="You have received a new message. " . " Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message" ; $headers="From: $myemail\n" ; $headers .="Reply-To: $email_address"
-    ; mail($to,$email_subject,$email_body,$headers); //redirect to the 'thank you' page header('Location: contact-form-thank-you.html'); }>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Sven Struan Finlay</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <title>Sven Struan Finlay</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 
 
-		<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
+  <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
-		<link rel="stylesheet" type="text/css" href="css/component1.css" />
-		<script src="js/modernizr-2.6.2.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="js/typed.js"></script>
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" type="text/css" href="css/component1.css" />
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/typed.js"></script>
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/particles.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+  <div id="particles-js"></div>
+
+
+  <div class="navblock ">
+    <nav class="navbar fixed-top navbar-expand-lg ">
+      <a class="navbar-brand" href="#">
+        <h1 class="Heading">Sven Struan Finlay</h1>
+      </a>
+
+
+      <div class="collapse navbar-collapse" id="navbarText">
+
+      </div>
+      <span id="typed"></span>
+    </nav>
+  </div>
 
 
 
-	</head>
+  <div></div>
 
-	<body>
-
-
-
-
-		<div class="navblock ">
-			<nav class="navbar fixed-top navbar-expand-lg ">
-				<a class="navbar-brand" href="#">
-					<h1 class="Heading">Sven Struan Finlay</h1>
-				</a>
+  <div class="card">
+    <div class="card-header">
+      <h2 class="card-title">Contact Me</h2>
 
 
-				<div class="collapse navbar-collapse" id="navbarText">
+    </div>
 
-				</div>
-				<span id="typed"></span>
-			</nav>
-		</div>
+    <div class="card-body">
 
+      <div class="row ">
+        <div class="col-6  contactlist ">
+          <h5>Please contact me on the specific email that is relavent to you:</h5>
+          <ul class="">
+            <li>
+              For any personal related queries please contact me at
 
-		<div class="">
+              <ul>
+                <li><a href="mailto:info@svensfinlay.tech">info@svensfinlay.tech</a></li>
 
-		</div>
+              </ul>
+            </li>
+            <li>
+              For any Saint Web Team related queries please contact me at
+              <ul>
+                <li><a href="mailto:web@thesaint-online.com">web@thesaint-online.com</a></li>
 
-		<div class="card contactCard">
-			<div class="card-header">
-				<h2 class="card-title">Contact Me</h2>
+              </ul>
 
+            </li>
+            <li>
 
-			</div>
-			<div class="card-body">
+              For any Big BUStA Big Band related queries please contact me at
 
-				<div class="row ">
-					<div class="col-6  contactlist ">
-						<h5>Please contact me on the specific email that is relavent to you:</h5>
-						<ul class="">
-							<li>
-								For any personal related queries please contact me at
+              <ul>
+                <li> <a href="mailto:info@svensfinlay.tech"> bigbusta@st-andrews.ac.uk</a></li>
 
-								<ul>
-									<li><a href="mailto:info@svensfinlay.tech">info@svensfinlay.tech</a></li>
-
-								</ul>
-							</li>
-							<li>
-								For any Saint Web Team related queries please contact me at
-								<ul>
-									<li><a href="mailto:web@thesaint-online.com">web@thesaint-online.com</a></li>
-
-								</ul>
-
-							</li>
-							<li>
-
-								For any Big BUStA Big Band related queries please contact me at
-
-								<ul>
-									<li> <a href="mailto:info@svensfinlay.tech"> bigbusta@st-andrews.ac.uk</a></li>
-
-								</ul>
+              </ul>
 
 
-							</li>
-						</ul>
+            </li>
+          </ul>
 
 
-						<!-- <a href="#" class="card-link">Card link</a> -->
-					</div>
-					<div class="col-6">
-						<h5>Or send me a query here:</h5>
-						<!-- <form>
+          <!-- <a href="#" class="card-link">Card link</a> -->
+        </div>
+        <div class="col-6">
+          <h5>Or send me a query here:</h5>
+          <!-- <form>
 						<div class="form-group">
 							<label for="exampleFormControlInput1">Email address</label>
 							<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -117,107 +116,108 @@
 							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 						</div>
 					</form> -->
-						<form method="post" name="contact_form" 2 action="contact-form-handler.php">
-							<p>
-								Your Name:
-							</p>
+          <form method="post" name="contact_form" 2 action="contact-form-handler.php">
+            <p>
+              Your Name:
+            </p>
 
-							<input type="text" name="name" style="width: 100%">
+            <input type="text" name="name" style="width: 100%">
 
-							<p>
-								Email Address:
+            <p>
+              Email Address:
 
-							</p>
-							<input type="text" name="email" style="width: 100%">
+            </p>
+            <input type="text" name="email" style="width: 100%">
 
-							<p>
-								Message:
+            <p>
+              Message:
 
-							</p>
-							<textarea name="message" style="width: 100%"></textarea>
+            </p>
+            <textarea name="message" style="width: 100%"></textarea>
 
-							<p>
-								<input type="submit" value="Submit">
-							</p>
+            <p>
+              <input type="submit" value="Submit">
+            </p>
 
-						</form>
-						<!-- <a href="#" class="card-link">Another link</a> -->
-					</div>
-				</div>
-				<!-- <div class="card-body">
+          </form>
+          <!-- <a href="#" class="card-link">Another link</a> -->
+        </div>
+      </div>
+      <!-- <div class="card-body">
 				<a href="#" class="card-link">Card link</a>
 				<a href="#" class="card-link">Another link</a>
 			</div> -->
-			</div>
-		</div>
+    </div>
+  </div>
+
+
+
+
+  <!-- MENU CODE -->
+
+  <section class="panel1">
+
+    <!-- Start Nav Structure -->
+    <button class="cn-button" id="cn-button">Menu</button>
+    <div class="cn-wrapper" id="cn-wrapper">
+      <ul>
+        <li><a href="./projects.html" title="Projects"><span class="fas fa-memory" title="projects"></span></a></li>
+        <li><a href="./about_me.html" title="About me"><span class="fas fa-headphones"></span></a></li>
+        <li><a href="./" title="Home"><span class="fas fa-home"></span></a></li>
+        <li><a href="./skills.html" title="Skills"><span class="fas fa-award"></span></a></li>
+        <li><a href="./contact.html" title="Contact"><span class="fas fa-address-book"></span></a></li>
+      </ul>
+    </div>
+    <div id="cn-overlay" class="cn-overlay"></div>
+    <!-- End Nav Structure -->
+
+  </section>
 
 
 
 
 
+  <style media="screen">
+    #typed {
+      font-size: 25px;
+    }
+  </style>
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ['I am a university student.', 'I am a computer scientist. ', 'I am a developer', 'I am a coffee drinker. ', 'I am a musician. ', 'I am a foodie. ', 'I am a developer'],
+      typeSpeed: 20,
+      backSpeed: 30,
+      smartBackspace: true, // this is a default
+      loop: true
+    });
+  </script>
+  <script src="js/demo1.js"></script>
+  <script src="js/polyfills.js"></script>
 
-		<!-- MENU CODE -->
+  <script src="js/js.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-		<section class="panel1">
+  <script language="JavaScript">
+    var frmvalidator = new Validator("contact_form");
 
-			<!-- Start Nav Structure -->
-			<button class="cn-button" id="cn-button">Menu</button>
-			<div class="cn-wrapper" id="cn-wrapper">
-				<ul>
-					<li><a href="./projects.html" title="Projects"><span class="fas fa-memory" title="projects"></span></a></li>
-					<li><a href="./about_me.html" title="About me"><span class="fas fa-headphones"></span></a></li>
-					<li><a href="./" title="Home"><span class="fas fa-home"></span></a></li>
-					<li><a href="./skills.html" title="Skills"><span class="fas fa-award"></span></a></li>
-					<li><a href="./contact.html" title="Contact"><span class="fas fa-address-book"></span></a></li>
-				</ul>
-			</div>
-			<div id="cn-overlay" class="cn-overlay"></div>
-			<!-- End Nav Structure -->
+    frmvalidator.addValidation("name", "req", "Please provide your name");
 
-		</section>
+    frmvalidator.addValidation("email", "req", "Please provide your email");
 
+    frmvalidator.addValidation("email", "email",
 
+      "Please enter a valid email address");
+  </script>
 
+  <!-- <script src="js/particles.min.js"></script> -->
+  <script src="js/particles-show.js"></script>
 
-
-
-		<style media="screen">
-			#typed {
-				font-size: 25px;
-			}
-		</style>
-		<script>
-			var typed = new Typed('#typed', {
-				strings: ['I am a university student.', 'I am a computer scientist. ', 'I am a developer', 'I am a coffee drinker. ', 'I am a musician. ', 'I am a foodie. ', 'I am a developer'],
-				typeSpeed: 20,
-				backSpeed: 30,
-				smartBackspace: true, // this is a default
-				loop: true
-			});
-		</script>
-		<script src="js/demo1.js"></script>
-		<script src="js/polyfills.js"></script>
-
-		<script src="js/js.js"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-		<script language="JavaScript">
-			var frmvalidator = new Validator("contact_form");
-
-			frmvalidator.addValidation("name", "req", "Please provide your name");
-
-			frmvalidator.addValidation("email", "req", "Please provide your email");
-
-			frmvalidator.addValidation("email", "email",
-
-				"Please enter a valid email address");
-		</script>
+  <!-- <php echo nl2br($errors);> -->
 
 
-	</body>
-	<php echo nl2br($errors);>
+</body>
 
 </html>

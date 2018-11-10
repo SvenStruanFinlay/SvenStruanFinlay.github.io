@@ -1,8 +1,15 @@
-.contactCard {
+.card {
 	background-color: #464866;
-	margin: 12% auto;
+
+	margin: 12% 12%;
 	width: 75%;
 	height: 50%;
+		position: fixed;
+
+}
+
+#particles-js{
+	position: absolute;
 }
 
 .contactlist {
