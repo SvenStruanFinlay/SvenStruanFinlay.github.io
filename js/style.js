@@ -1,9 +1,4 @@
-.image_section img{
-    display: block;
-}
+jQuery(document).ready(function($) {
 
-@media (max-width:640px){
-    .image_section img:first-child{
-        display:none;
-    }
+
 }

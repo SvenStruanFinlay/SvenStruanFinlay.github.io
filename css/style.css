@@ -13,6 +13,9 @@
     zoom: 1.0;
 }
 
+#typed {
+  font-size: 25px;
+}
 body {
     background-color: #AAABB8;
     color: white;
@@ -69,6 +72,20 @@ html, body {
     /* position: absolute; */
     background-color: #25274D;
     text-align: center;
+    width: 100%;
+    /* line-height: 1em; */
+}
+
+.over{
+    font-family: 'Teko', sans-serif;
+    margin: 20px 0;
+    height: 500px;
+    color: #f9f3f4;
+    /* opacity: 0.95; */
+    /* position: absolute; */
+    position: absolute;
+    text-align: center;
+    top: 7%;
     width: 100%;
     /* line-height: 1em; */
 }
@@ -164,9 +181,38 @@ canvas {
     color: white;
 }
 
-@media screen and (max-width:450px) {
+.image_me img{
+    display: block;
+}
+
+@media (max-width:1200px){
+    .image_me img:first-child{
+        display:none;
+    }
+
+    .navblock {
+      height: 70px;
+    }
+}
+@media (max-width:1000px) {
     /* CSS for screens that are 320 pixels or less will be put in this section */
     h1 {
-        font-size: 20px;
+        font-size: 12px;
     }
+
+    .Heading {
+        font-family: 'Teko', sans-serif;
+        font-size: 18px;
+        text-shadow: 2px 2px 2px #aaa;
+        padding-top: 10px;
+    }
+
+    .btextblock h1 {
+        font-size: 30px;
+    }
+
+    #typed {
+      font-size: 14px;
+    }
+
 }
