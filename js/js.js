@@ -25,7 +25,7 @@ function typewriter() {
         iIndex++;
         if (iIndex != aText.length) {
             iArrLength = aText[iIndex].length;
-            setTimeout("typewriter()", 500);
+            setTimeout("typewriter()", 200);
         }
     } else {
         setTimeout("typewriter()", iSpeed);
